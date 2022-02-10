@@ -1,0 +1,12 @@
+.button:hover{
+ -fx-border-color: Red;
+ -fx-text-fill: lightsteelblue;
+}
+.tab-pane:hover{
+ -border-color: Red;
+}
+.tab-header-background {
+  -fx-background-color: black;
+  -fx-background-radius: 1;
+ -fx-translate-y: 1
+;}

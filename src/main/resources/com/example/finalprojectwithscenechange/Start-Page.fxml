@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="Background" alignment="CENTER" prefHeight="369.0" prefWidth="510.0" spacing="20.0" style="-fx-background-color: linear-gradient(black,steelblue) linear-gradient(black,steelblue); -fx-background-insets: 1; -fx-background-radius: 10; -fx-border-radius: 100;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalprojectwithscenechange.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="329.0" prefWidth="595.0">
+      <children>
+      
+          <Label fx:id="homeScreenText" layoutX="47.0" layoutY="6.0" prefHeight="59.0" prefWidth="387.0" stylesheets="@../../../CSS%20StyleSheets/ForButtons.css" text="IBDP NOTES/RESROUCE BANK" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+            <font>
+               <Font name="Trebuchet MS" size="28.0" />
+            </font>
+         </Label>
+          <Button fx:id="EnterButton" layoutX="89.0" layoutY="122.0" onAction="#switchToScene2" opacity="0.7" prefHeight="49.0" prefWidth="280.0" style="-fx-background-color: linear-gradient(black,lightgrey);" styleClass="EnterButton" text="notetaking">
+            <font>
+               <Font name="Phosphate Inline" size="26.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <textFill>
+               <LinearGradient endY="0.8954869358669834">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.004446880891919136" green="0.8489837050437927" blue="0.9605262875556946" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="1.0" green="1.0" blue="1.0" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="CloseButton" layoutX="444.0" layoutY="1.0" onAction="#switchToCloseScene" opacity="0.7" prefHeight="26.0" prefWidth="26.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" style="-fx-shape: &quot;M1.63,97.99l36.55-36.55L1.63,24.89c-2.17-2.17-2.17-5.73,0-7.9L16.99,1.63c2.17-2.17,5.73-2.17,7.9,0 l36.55,36.55L97.99,1.63c2.17-2.17,5.73-2.17,7.9,0l15.36,15.36c2.17,2.17,2.17,5.73,0,7.9L84.7,61.44l36.55,36.55 c2.17,2.17,2.17,5.73,0,7.9l-15.36,15.36c-2.17,2.17-5.73,2.17-7.9,0L61.44,84.7l-36.55,36.55c-2.17  ,2.17-5.73,2.17-7.9,0 L1.63,105.89C-0.54,103.72-0.54,100.16,1.63,97.99L1.63,97.99z&quot;&quot;M1.63,97.99l36.55-36.55L1.63,24.89c-2.17-2.17-2.17-5.73,0-7.9L16.99,1.63c2.17-2.17,5.73-2.17,7.9,0 l36.55,36.55L97.99,1.63c2.17-2.17,5.73-2.17,7.9,0l15.36,15.36c2.17,2.17,2.17,5.73,0,7.9L84.7,61.44l36.55,36.55 c2.17,2.17,2.17,5.73,0,7.9l-15.36,15.36c-2.17,2.17-5.73,2.17-7.9,0L61.44,84.7l-36.55,36.55c-2.17  ,2.17-5.73,2.17-7.9,0 L1.63,105.89C-0.54,103.72-0.54,100.16,1.63,97.99L1.63,97.99z&quot;; -fx-background-color: darkgrey; -fx-background-insets: 32.5; -fx-border-width: 1;" textFill="RED">
+            <font>
+               <Font name="Phosphate Inline" size="13.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
+         </Button>
+         <Button fx:id="EnterButton1" layoutX="89.0" layoutY="203.0" onAction="#switchToScene3" opacity="0.7" prefHeight="49.0" prefWidth="280.0" style="-fx-background-color: linear-gradient(black,lightgrey);" styleClass="EnterButton" text="recources">
+            <font>
+               <Font name="Phosphate Inline" size="26.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <textFill>
+               <LinearGradient endY="0.6247030878859858" startY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.004446880891919136" green="0.8489837050437927" blue="0.9605262875556946" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="1.0" green="1.0" blue="1.0" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+      </children>
+   </AnchorPane>
+</VBox>

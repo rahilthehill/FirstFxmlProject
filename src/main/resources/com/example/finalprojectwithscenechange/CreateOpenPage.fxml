@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="Background" alignment="CENTER" prefHeight="369.0" prefWidth="510.0" spacing="20.0" style="-fx-background-color: linear-gradient(black,steelblue); -fx-background-insets: 1; -fx-background-radius: 10; -fx-border-radius: 100;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalprojectwithscenechange.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <AnchorPane prefHeight="356.0" prefWidth="470.0">
+         <children>
+            <TextArea layoutX="7.0" layoutY="84.0" prefHeight="181.0" prefWidth="446.0" promptText="Notes">
+               <font>
+                  <Font name="Apple LiGothic Medium" size="16.0" />
+               </font>
+            </TextArea>
+            <TextArea layoutX="8.0" layoutY="32.0" prefHeight="24.0" prefWidth="446.0" promptText="Title">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </TextArea>
+            <Label fx:id="GoBackText" layoutX="68.0" layoutY="-2.0" prefHeight="17.0" prefWidth="130.0" />
+            <Button fx:id="AddToNotes" layoutX="171.0" layoutY="288.0" opacity="0.7" prefHeight="28.0" prefWidth="124.0" styleClass="EnterButton" text="SAVE NOTE" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="288.0">
+               <font>
+                  <Font name="Phosphate Inline" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="CloseButton" layoutX="443.0" layoutY="-6.0" onAction="#switchToCloseScene" opacity="0.7" prefHeight="26.0" prefWidth="26.0" style="-fx-shape: &quot;M1.63,97.99l36.55-36.55L1.63,24.89c-2.17-2.17-2.17-5.73,0-7.9L16.99,1.63c2.17-2.17,5.73-2.17,7.9,0 l36.55,36.55L97.99,1.63c2.17-2.17,5.73-2.17,7.9,0l15.36,15.36c2.17,2.17,2.17,5.73,0,7.9L84.7,61.44l36.55,36.55 c2.17,2.17,2.17,5.73,0,7.9l-15.36,15.36c-2.17,2.17-5.73,2.17-7.9,0L61.44,84.7l-36.55,36.55c-2.17  ,2.17-5.73,2.17-7.9,0 L1.63,105.89C-0.54,103.72-0.54,100.16,1.63,97.99L1.63,97.99z&quot;&quot;M1.63,97.99l36.55-36.55L1.63,24.89c-2.17-2.17-2.17-5.73,0-7.9L16.99,1.63c2.17-2.17,5.73-2.17,7.9,0 l36.55,36.55L97.99,1.63c2.17-2.17,5.73-2.17,7.9,0l15.36,15.36c2.17,2.17,2.17,5.73,0,7.9L84.7,61.44l36.55,36.55 c2.17,2.17,2.17,5.73,0,7.9l-15.36,15.36c-2.17,2.17-5.73,2.17-7.9,0L61.44,84.7l-36.55,36.55c-2.17  ,2.17-5.73,2.17-7.9,0 L1.63,105.89C-0.54,103.72-0.54,100.16,1.63,97.99L1.63,97.99z&quot;; -fx-background-color: darkgrey; -fx-background-insets: 32.5; -fx-border-width: 1;" textFill="RED">
+               <font>
+                  <Font name="Phosphate Inline" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+            </Button>
+            <Button fx:id="BackButton" layoutX="-21.0" layoutY="-7.0" onAction="#switchToScene1" opacity="0.75" prefHeight="22.0" prefWidth="101.0" style="-fx-shape: &quot;M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z&quot;&quot;M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z&quot;; -fx-background-color: darkgrey; -fx-background-insets: 32.5; -fx-border-width: 1;" styleClass="backbutton" textFill="RED">
+               <font>
+                  <Font name="Phosphate Inline" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="W_RESIZE" />
+               </cursor>
+            </Button>
+            <Label fx:id="SavedNoteText" layoutX="172.0" layoutY="269.0" prefHeight="17.0" prefWidth="121.0" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
